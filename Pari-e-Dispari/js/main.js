@@ -9,7 +9,7 @@ function randomNumber(min,max){
     return Math.floor((Math.random() * (max-min)) +min);
 }
 
-// 2. creo una funzione per stabilire se la somma dei 2 numeri è pari o dispari
+// 2. creo una funzione per stabilire se è pari o dispari
 function evenOdd(numero){
     if ( numero % 2 === 0) {
         return true;
@@ -17,3 +17,18 @@ function evenOdd(numero){
         return false;
     }
 }
+
+// 3. creo costante per richiesta all'utente (tramite prompt) scelta pari o dispari. 
+const chooseEveneOdd = prompt("Scegli PARI o DISPARI")
+console.log(chooseEveneOdd);
+
+// 4. creo costante per richiesta all'utente (tramite prompt) scelta numero da 1 a 5.
+const chooseNumber = Number(prompt("Inserisci un numero da 1 a 5"));
+console.log(chooseNumber);
+
+// 5. creo un array che contenga i numeri per la generazione random del sistema.
+const number = randomNumber[1,2,3,4,5];
+console.log(number)
+
+// 6. creo variabile per realizzare la somma dei due numeri inseriti
+let sum = number + chooseNumber;

@@ -3,15 +3,17 @@
 
 // 1. creo una funzione per genrare il controllo della parola
 function wordReverse(str){
-    const reversedWord = str.split('').reverse().join('');  
-    return reversedWord;
-  }
+    for ( let i = word.length - 1; i >= 0; i--) {
+        reversedWord += word[i];
+    }
+}
 
 // 2. chiedo all'utente di inserire una parola
 const word = prompt("Inserisci una parola!");
 
 // 3. creo una costante per la parola invertita
-const reversedWord = wordReverse(word);
+let reversedWord = "";
+console.log(reversedWord)
 
 // 4. Creo ciclo if per verificare se la parola inserita, se invertita, risulta uguale (palindroma)
 if ( word === reversedWord) {
